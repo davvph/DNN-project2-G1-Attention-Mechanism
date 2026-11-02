@@ -1,11 +1,8 @@
 # DNN Project 2 — Group 1: Attention Mechanism
 
-**Course:** Deep Neural Networks  
-**Semester:** 2024–2025
-
 ---
 
-## 👥 Group Members
+## Group Members
 
 | Student ID | Name | GitHub |
 |------------|------|--------|
@@ -17,7 +14,7 @@
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 This repository contains two components of the midterm assignment:
 
@@ -25,8 +22,6 @@ This repository contains two components of the midterm assignment:
 2. **Research Assignment** — Topic 2: Attention Mechanism in deep learning.
 
 ---
-
-## Part I: RNN Exercise — Stock Price Forecasting
 
 ### Objective
 Develop an RNN-based model to predict the next-day closing price of Alphabet Inc. (GOOGL) stock using the previous 30 trading days as input.
@@ -81,30 +76,8 @@ Input → SimpleRNN(64, tanh) → Dropout(0.2) → Dense(1)
 
 ---
 
-## Part II: Research Assignment — Attention Mechanism
 
-### Key Topics Covered
-
-1. **Introduction** — What is the Attention Mechanism and what problems does it solve?
-2. **Attention in Encoder–Decoder** — How Attention improves handling of long input sequences
-3. **Core Components** — Query (Q), Key (K), Value (V) and their roles
-4. **Mathematical Formulation** — Attention scores, weights, and context vectors
-5. **Types of Attention** — Additive, Multiplicative, Dot-Product, Scaled Dot-Product
-6. **Self-Attention** — Capturing intra-sequence relationships
-7. **Multi-Head Attention** — Parallel attention heads and their advantages
-8. **Attention in Transformers** — Integration in Encoder and Decoder layers
-9. **Computational Complexity** — Memory and time complexity vs. sequence length
-10. **Applications** — NLP, computer vision, speech, time-series, multimodal learning
-11. **Advantages & Limitations** — Comparison with RNNs and LSTMs
-12. **MCQs** — 5 multiple-choice questions (2 easy, 2 intermediate, 1 difficult)
-
-### Presentation
-- **Format:** 15–20 slides
-- **Duration:** 15–20 minutes
-
----
-
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 DNN-project2-G1-Attention-Mechanism/
@@ -122,22 +95,4 @@ DNN-project2-G1-Attention-Mechanism/
 └── README.md
 ```
 
----
 
-## ⚙️ Setup
-
-```bash
-pip install numpy pandas scikit-learn tensorflow matplotlib
-```
-
----
-
-## 📊 Results
-
-*To be updated after experiments.*
-
-| Model | MAE | RMSE | MSE | R² |
-|-------|-----|------|-----|----|
-| SimpleRNN | — | — | — | — |
-| GRU | — | — | — | — |
-| LSTM | — | — | — | — |
