@@ -10,7 +10,7 @@
 | 11247371 | Phạm Bá Việt | [@davvph](https://github.com/davvph) |
 | 11247291 | Lê Huy Hoàng | [@helian16](https://github.com/helian16) |
 | 11247289 | Lương Thế Hiếu | [@adcc17](https://github.com/adcc17) |
-| — | Bé Thành Tiên | [@Tienachilles](https://github.com/Tienachilles) |
+| — | Bế Thành Tiên | [@Tienachilles](https://github.com/Tienachilles) |
 | 11247287 | Chử Vũ Thảo Hiền | [@dqchien](https://github.com/dqchien) |
 
 ---
