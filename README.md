@@ -1,21 +1,23 @@
 # DNN Project 2 — Group 1: Attention Mechanism
 
+**Course:** Deep Neural Networks  
+**Semester:** 2024–2025
 
 ---
 
-## Group Members
+## 👥 Group Members
 
 | Student ID | Name | GitHub |
 |------------|------|--------|
 | 11247371 | Phạm Bá Việt | [@davvph](https://github.com/davvph) |
 | 11247291 | Lê Huy Hoàng | [@helian16](https://github.com/helian16) |
 | 11247289 | Lương Thế Hiếu | [@adcc17](https://github.com/adcc17) |
-| — | Bế Thành Tiên | [@Tienachilles](https://github.com/Tienachilles) |
+| — | Bé Thành Tiên | [@Tienachilles](https://github.com/Tienachilles) |
 | 11247287 | Chử Vũ Thảo Hiền | [@dqchien](https://github.com/dqchien) |
 
 ---
 
-## Project Overview
+## 📋 Project Overview
 
 This repository contains two components of the midterm assignment:
 
@@ -79,20 +81,63 @@ Input → SimpleRNN(64, tanh) → Dropout(0.2) → Dense(1)
 
 ---
 
+## Part II: Research Assignment — Attention Mechanism
 
-## Repository Structure
+### Key Topics Covered
+
+1. **Introduction** — What is the Attention Mechanism and what problems does it solve?
+2. **Attention in Encoder–Decoder** — How Attention improves handling of long input sequences
+3. **Core Components** — Query (Q), Key (K), Value (V) and their roles
+4. **Mathematical Formulation** — Attention scores, weights, and context vectors
+5. **Types of Attention** — Additive, Multiplicative, Dot-Product, Scaled Dot-Product
+6. **Self-Attention** — Capturing intra-sequence relationships
+7. **Multi-Head Attention** — Parallel attention heads and their advantages
+8. **Attention in Transformers** — Integration in Encoder and Decoder layers
+9. **Computational Complexity** — Memory and time complexity vs. sequence length
+10. **Applications** — NLP, computer vision, speech, time-series, multimodal learning
+11. **Advantages & Limitations** — Comparison with RNNs and LSTMs
+12. **MCQs** — 5 multiple-choice questions (2 easy, 2 intermediate, 1 difficult)
+
+### Presentation
+- **Format:** 15–20 slides
+- **Duration:** 15–20 minutes
+
+---
+
+## 🗂️ Repository Structure
 
 ```
 DNN-project2-G1-Attention-Mechanism/
-├── data/                   # Dataset (not tracked by git)
-├── notebooks/              # Jupyter notebooks / .py scripts
-│   ├── preprocessing.py
-│   ├── rnn_model.py
-│   └── evaluation.py
-├── results/                # Plots and metric outputs
-├── slides/                 # Research assignment presentation
+├── data/
+│   ├── GOOGL.csv                  # raw dataset
+│   └── processed/                 # sequences + scalers (output of 02)
+├── code/
+│   ├── 01_data_explore.ipynb
+│   ├── 02_preprocessing.ipynb
+│   └── ...                        # model + evaluation notebooks (next)
+├── results/                       # one folder per notebook
+│   ├── 01_data_explore/
+│   └── 02_preprocessing/
+├── slides/                        # research assignment presentation
 └── README.md
 ```
 
 ---
 
+## ⚙️ Setup
+
+```bash
+pip install numpy pandas scikit-learn tensorflow matplotlib
+```
+
+---
+
+## 📊 Results
+
+*To be updated after experiments.*
+
+| Model | MAE | RMSE | MSE | R² |
+|-------|-----|------|-----|----|
+| SimpleRNN | — | — | — | — |
+| GRU | — | — | — | — |
+| LSTM | — | — | — | — |
