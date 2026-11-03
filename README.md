@@ -1,11 +1,11 @@
 # DNN Project 2 — Group 1: Attention Mechanism
 
 **Course:** Deep Neural Networks  
-**Semester:** 2024–2025
+**Semester:** 1, 2026–2027
 
 ---
 
-## 👥 Group Members
+## Group Members
 
 | Student ID | Name | GitHub |
 |------------|------|--------|
@@ -17,12 +17,12 @@
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
-This repository contains two components of the midterm assignment:
+This repository contains our midterm work for the Deep Neural Networks course:
 
-1. **RNN Exercise** — Time series forecasting using recurrent neural networks on historical Google stock data.
-2. **Research Assignment** — Topic 2: Attention Mechanism in deep learning.
+1. **RNN Exercise**: time series forecasting with recurrent neural networks on historical Google stock data.
+2. **Research Assignment (Topic 2)**: the Attention Mechanism in deep learning.
 
 ---
 
@@ -104,40 +104,52 @@ Input → SimpleRNN(64, tanh) → Dropout(0.2) → Dense(1)
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 DNN-project2-G1-Attention-Mechanism/
 ├── data/
 │   ├── GOOGL.csv                  # raw dataset
-│   └── processed/                 # sequences + scalers (output of 02)
+│   └── processed/                 # sequences and scalers (output of 02)
 ├── code/
-│   ├── 01_data_explore.ipynb
-│   ├── 02_preprocessing.ipynb
-│   └── ...                        # model + evaluation notebooks (next)
+│   ├── 01_data_explore.ipynb      # inspect data, split, baseline
+│   ├── 02_preprocessing.ipynb     # scaling, 30-day windows, saved arrays
+│   └── 03_model_training.ipynb    # SimpleRNN / GRU / LSTM, evaluation
+├── models/                        # trained models (output of 03)
 ├── results/                       # one folder per notebook
 │   ├── 01_data_explore/
-│   └── 02_preprocessing/
+│   ├── 02_preprocessing/
+│   └── 03_model_training/
 ├── slides/                        # research assignment presentation
 └── README.md
 ```
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 ```bash
-pip install numpy pandas scikit-learn tensorflow matplotlib
+pip install numpy pandas scikit-learn tensorflow matplotlib joblib jupyter
 ```
+
+Run the notebooks in order, from inside the `code` folder, because they read data with relative paths such as `../data/GOOGL.csv`:
+
+```bash
+cd code
+jupyter notebook
+```
+
+Run `01_data_explore.ipynb`, then `02_preprocessing.ipynb`, then `03_model_training.ipynb`.
 
 ---
 
-## 📊 Results
+## Results
 
-*To be updated after experiments.*
+*To be filled in from `results/03_model_training/test_metrics.csv` after training.*
 
 | Model | MAE | RMSE | MSE | R² |
 |-------|-----|------|-----|----|
+| Persistence baseline | — | — | — | — |
 | SimpleRNN | — | — | — | — |
 | GRU | — | — | — | — |
 | LSTM | — | — | — | — |
